@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>My First Form</title>
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+	<html>
+		<div class="container"> 
+			<h1>Please, fill-in the form below to register</h1>
+			<form action=" " method="get">
+				<fieldset>
+					<legend>your profile</legend>
+					<div>
+						<p>
+							<label>
+								First Name:
+								<input type="text" name="firstname" size="40" maxlength="100" placeholder="First Name" required="required">
+							</label>
+						</p>
+					</div>
+
+					<div>
+						<p>
+							<label>
+								Last Name:
+								<input type="text" name="lastname" size="40" maxlength="100" placeholder="Last Name" required="required">
+							</label>
+						</p>
+					</div>
+
+					<div>	
+						<p>
+							<label>Gender</label>
+							<label class="inline">
+								Male
+								<input type="radio" name="gender" value="yes" />
+							</label>
+						
+							<label class="inline">
+								Female
+								<input type="radio" name="gender" value="no" />
+							</label>
+						</p>
+					</div>
+
+					<div>
+						<p>
+							<label>
+								Phone Number:
+								<input type="phone" name="phone-number" size="40" maxlength="100" placeholder="Phone number">
+							</label>
+						</p>
+					</div>
+
+					<div>
+						<p>
+							<label>
+								Email:
+								<input type="email" name="email-address" size="40" maxlength="100" placeholder="Email">
+							</label>
+						</p>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>your review</legend>				 
+					<div>
+						<p>
+							<label for="hear-about-us">1&#45;How did you hear about us for the first time?</label>
+								<select name="referrer" id="hear-about-us">
+									<option value="google">Search Engine</option>
+									<option value="friend">Friends</option>
+									<option value="family">Family</option>
+									<option value="advert">Advertising</option>
+									<option value="other">Other</option>
+								</select>
+							</label>
+						</p>
+					</div>
+
+					<div>
+						<p>
+							<label for="t_date">
+								2&#45;When was your last transactions with us?
+							</label>
+							<input id="t_date" type="date" name="transaction-date" />
+						</p>
+					</div>
+					
+					<div>
+						<p>
+							<label>
+								3&#45;How were the services we offered you?
+							</label>
+						</p>
+						
+						<p>
+							<label>
+								<input type="radio" name="rating" value="yes" />
+								Excellent
+							</label>
+						</p>
+						
+						<p>
+							<label>
+								<input type="radio" name="rating" value="no" />
+								Good
+							</label>
+						</p>
+						
+						<p>
+						<label>
+							<input type="radio" name="rating" value="no" />
+							Acceptable
+						</label>
+						</p>
+
+						<p>
+							<label>
+								<input type="radio" name="rating" value="no" />
+								Not too bad
+							</label>
+						</p>
+
+						</p>
+							<label>
+								<input type="radio" name="rating" value="no" />
+								Bad
+							</label>
+						</p>
+					</div>
+
+					<div>
+						<p>
+							<label>
+								4&#45;What do you prefer when making transactions with us?
+								<select name="preference" size="4" multiple="multiple">
+									<option value="Warm welcome" selected="selected">Warm Welcome</option>
+									<option value="Product Quality" selected="selected">Product Quality</option>
+									<option value="Good Price" selected="selected">Good Price</option>
+									<option value="Concern for Feedback" selected="selected">Concern for Feedback</option>
+								</select>
+							</label>
+						</p>
+					</div>
+
+					<div>
+						</p>
+							<label>
+								5&#45;Would you visit us again?
+							</label>
+							<label>
+								<input type="radio" name="visit" value="yes" />For sure
+							</label>
+							<label>
+								<input type="radio" name="visit" value="no" />Maybe
+							</label>
+							<label>
+								<input type="radio" name="visit" value="no" />Don&#39;t know
+							</label>
+							<label>
+								<input type="radio" name="visit" value="no" />No
+							</label>
+						</p>
+					</div>
+
+					<div>
+						<p>
+							<label>
+								6&#45;Would you recommend us to other people?
+							</label>
+							<label>
+								<input type="radio" name="recommend" value="yes" />For sure
+							</label>
+							<label>
+								<input type="radio" name="recommend" value="no" />Maybe
+							</label>
+							<label>
+								<input type="radio" name="recommend" value="no" />Don&#39;t know
+							</label>
+							<label>
+								<input type="radio" name="recommend" value="no" />No
+							</label>
+						</p>
+					</div>
+				</fieldset>
+
+				<fieldset>
+					<legend>your comments</legend>
+					<div>
+						<p>
+							<label>
+								Add your comments below</label>
+								<textarea rows="6" cols="70" id="comments" placeholder="Use only the characters a-z, A-Z, and 0-9"></textarea>
+							</label>
+						</p>
+					</div>
+					
+					<div>
+						<p>
+							<label>
+								Upload your file below (Only .pdf format can be submitted)
+								<input type="file" name="upload-file" />
+							</label>
+						</p>
+					</div>
+					
+					<div>
+						<p>
+							<label>
+								<input type="checkbox" name="approbation" />
+								I confirm that the information entered are true
+							</label>
+						</p>
+					</div>
+					<input id="submit" type="submit" value="SEND" />
+				</fieldset>
+			</form>
+		</div>
+	</body>
+</html>
