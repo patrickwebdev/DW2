@@ -1,0 +1,64 @@
+/*Pricing Plan Table*/
+
+th.row, th.pair {
+	text-align: left;
+}
+
+th.pair, td.pair {
+	background-color: #e0e0d1;
+}
+
+th.col, th.collast {
+	color: #000000;
+	font-size: 18px;
+	text-align: center;
+	padding: 20px 35px 20px 35px;
+}
+
+th.collast, td.collast {
+	background-color: #009933;
+	border: 0px;
+	color: #ffffff;
+}
+
+td.collast2, td.rowlast2 {
+	background-color: #006600;
+	border: 0px;
+	color: #ffffff;
+}
+
+td, td.collast {
+	text-align: center;
+}
+
+th, td {
+	border: 0.1px solid #f0efed;
+}
+
+td {
+	height: 40px;
+}
+
+table {
+	table-layout: fixed;
+	width: 1000px;
+	border-collapse: collapse;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+td.rowlast, td.rowlast2 {
+	font-size: 30px;
+	font-weight: bold;
+	padding: 20px 35px 20px 35px;
+}
+
+th.firstcolrow, th.firstcollastrow {
+	border: none;
+}
+
+
+/*Headings*/
+h1.title {
+	text-align: center;
+}
