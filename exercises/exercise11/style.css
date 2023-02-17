@@ -1,0 +1,132 @@
+* {
+    box-sizing: ;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 0px 0px;
+    font-family: Verdana, sans-serif;
+}
+
+body {
+    animation-name: ;
+    animation-duration: 15s;
+    animation-delay: 0s;
+    animation-iteration-count:infinite;
+}
+
+.container{
+    width: ;
+    margin:0px auto 0px auto;
+    display:;
+}
+
+.text, .shape1, .shape2{
+ 
+    border:1px solid rgb(7, 7, 7);
+    margin:1% 3% 1% 3%;
+}
+
+.shape1, .shape2{
+    height:160px;
+    width: 160px;
+    animation-name: bd-radius, bg-colors;
+    animation-duration: 15s, 15s;
+    animation-delay: 0s;
+    animation-iteration-count:infinite;
+}
+  
+.text{
+    padding: 1% 1% 1% 1%;
+    text-align: center;
+    animation-name: txt-colors;
+    animation-duration: 15s;
+    animation-delay: 0s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes bg-colors {
+    0%, 100% {
+        background-color: red;
+    }
+    10% {
+        background-color: yellow;
+    }
+    30% {
+        background-color: blue;
+    }
+    50% {
+        background-color: rgb(21, 255, 0);
+    }
+    70% {
+        background-color: rgba(255, 140, 0, 0.972);
+    }
+    90% {
+        background-color: rgb(0, 255, 255);
+    }
+}
+
+@keyframes bd-colors {
+    0%, 100% {
+        border:10px solid red;
+    }
+    10% {
+        border:10px solid yellow;
+    }
+    30% {
+        border:10px solid blue;
+    }
+    50% {
+        border:10px solid rgb(21, 255, 0);
+    }
+    70% {
+        border:10px solid rgba(255, 140, 0, 0.972);
+    }
+    90% {
+        border:10px solid rgb(0, 255, 255);
+    }
+}
+
+@keyframes txt-colors {
+    0%, 100% {
+        color: red;
+    }
+    90% {
+        color:  rgb(21, 255, 0);
+    }
+    70% {
+        color: blue;
+    }
+    50% {
+        color: yellow;
+    }
+    30% {
+        color: rgba(255, 140, 0, 0.972);
+    }
+    10% {
+        color: rgb(0, 255, 255);
+    }
+}
+
+@keyframes bd-radius {
+    0%, 100% {
+        border-radius: 100%;
+    }
+    90% {
+        border-radius: 90%;
+    }
+    70% {
+        border-radius: 70%;
+    }
+    50% {
+        border-radius: 50%;
+    }
+    30% {
+        border-radius: 30%;
+    }
+    10% {
+        border-radius: 10%;
+    }
+}
+
