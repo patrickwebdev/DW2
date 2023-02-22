@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS demonstration Class1</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+
+        //IN-CLASS EXERCISES 12 
+
+        //Exercice 1 - Variable Datatype
+        //Check variable datatype
+        a = "JavaScript"
+        document.write('a ="JavaScript", datatype: ', typeof a, "<br/>")
+        b = a
+        document.write('b = a, datatype: ', typeof b, "<br/>")
+        c = ' Brendan Eich '
+        document.write("c = ' Brendan Eich ', datatype: ", typeof c, "<br/>")
+        d = c[2]
+        document.write('d = c[2], datatype: ', typeof d, "<br/>")
+        e = 10
+        document.write('e = 10, datatype: ', typeof e, "<br/>")
+        b = c + b
+        document.write('b = c + b, datatype: ', typeof b, "<br/>")
+        d = d * 509
+        document.write('d = d * 509, datatype: ', typeof d, "<br/>")
+        e *= 509
+        document.write('e *= 509, datatype: ', typeof e, "<br/>")
+
+        document.write("<br/>")
+
+        //Exercice 2 - Multidimentional Array
+        languages =
+            [
+                ['HTML', 'CSS', 'JS', 'PHP'],
+                ['Hypertext Markup Language', 'Cascading Style Sheets', 'JavaScript', 'Hypertext Preprocessor'],
+                ['Structure', 'Presentation', 'Client-Side Interactions', 'Server-Side Interactions']
+            ]
+        document.write(languages[0][0] + " means " + languages[1][0] + " and is used for describing the " + languages[2][0] + " of a webpage.<br/>")
+        document.write(languages[0][1] + " means " + languages[1][1] + " and is used for describing the " + languages[2][1] + " of a webpage.<br/>")
+        document.write(languages[0][2] + " means " + languages[1][2] + " and is used for adding " + languages[2][2] + " to a webpage.<br/>")
+        document.write(languages[0][3] + " means " + languages[1][3] + " and is used for adding " + languages[2][3] + " to a webpage.<br/>")
+
+
+        document.write("<br/>")
+
+        //Exercice 2 - Contional Control Structure (if, if else, if else if, else, switch, ? mark)
+        x = 3
+        weekday = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday']
+
+        //If, Else if, Else with a Single Condition for each statement
+        if (x == 0) {
+            document.write("Day " + x + " is " + weekday[x])
+        }
+        else if (x == 1) {
+            document.write("Day " + x + " is " + weekday[x])
+        }
+        else if (x == 2) {
+            document.write("Day " + x + " is " + weekday[x])
+        }
+        else if (x == 3) {
+            document.write("Day " + x + " is " + weekday[x])
+        }
+        else if (x == 4) {
+            document.write("Day " + x + " is " + weekday[x])
+        }
+        else if (x == 5) {
+            document.write("Day " + x + " is " + weekday[x])
+        }
+        else if (x == 6) {
+            document.write("Day " + x + " is " + weekday[x])
+        }
+        else if (x > 6) {
+            document.write("Your digit is greater than 6. Day " + x + " doesn't exist.")
+        }
+        else {
+            document.write("Your digit is lower than 0. Day " + x + " doesn't exist.")
+        }
+
+        document.write("<br/>")
+
+        //If, Else if, Else with combined Conditions using && (and)
+        if (x >= 0 && x <= 6) {
+            document.write("Day " + x + " is " + weekday[x])
+        }
+        else if (x > 6) {
+            document.write("Your digit is greater than 6. Day " + x + " doesn't exist.")
+        }
+        else {
+            document.write("Your digit is lower than 0. Day " + x + " doesn't exist.")
+        }
+
+        document.write("<br/>")
+
+        //If, Else if, Else with combined Conditions using || (or)
+        if (x < 0 || x > 6) {
+            document.write("Your digit is lower than 0 or greater than 6. Day " + x + " doesn't exist.")
+        }
+        else {
+            document.write("Day " + x + " is " + weekday[x])
+        }
+
+        document.write("<br/>")
+
+        //Question Mark operator (?)
+        document.write(
+            x >= 0 && x <= 6
+                ?
+                "Day " + x + " is " + weekday[x]
+                :
+                "Your digit is lower than 0 or greater than 6. Day " + x + " doesn't exist."
+        )
+
+        document.write("<br/>")
+
+        //Switch
+        switch (x) {
+            case 0:
+                document.write("Day " + x + " is Monday")
+                break
+            case 1:
+                document.write("Day " + x + " is Tuesday")
+                break
+            case 2:
+                document.write("Day " + x + " is Wednesday")
+                break
+            case 3:
+                document.write("Day " + x + " is Thursday")
+                break
+            case 4:
+                document.write("Day " + x + " is Friday")
+                break
+            case 5:
+                document.write("Day " + x + " is Saturday")
+                break
+            case 6:
+                document.write("Day " + x + " is Sunday")
+                break
+            default:
+                document.write("Day " + x + " doesn't exist.")
+        }
+
+        document.write("<br/>")
+
+    </script>
+</body>
+
+</html>
