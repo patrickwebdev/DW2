@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS demonstration Class1</title>
+</head>
+
+<body>
+    <script type="text/javascript">
+        //LOOPS, CONTINUE AND BREAK STATEMENTS
+        //While Loop
+        counterA = 0;
+
+        while (counterA < 5)
+        {
+            document.write("Counter: " + counterA + "<br>")
+            ++counterA
+        }
+
+        document.write("<br>")
+
+        //Do... While Loop
+        counterB = 0;
+
+        do
+        {
+            document.write("Counter: " + counterB + "<br>")
+            //++counterB
+        } while (++counterB < 5)
+
+        document.write("<br>")
+
+        //For Loop
+        for(counterC=0;counterC<5;++counterC)
+            document.write("Counter: " + counterC + "<br>")
+
+        document.write("<br>")
+
+        //Continue Statement
+        grades=[50,60,59,40,100]
+        success=0
+        for(i=0;i<5;++i){
+            if (grades[i]<60)
+                continue
+            ++success
+        }
+        document.write(success + "/5 students succeed this course<br/>")
+
+
+        //Break Statement
+        alphabet=['a','b','c','d','e']
+        letter='a'
+
+        for(i=0;i<5;++i){
+            if (alphabet[i]==letter)
+                break
+        }
+        document.write("I found "+letter+"<br/>")
+        document.write("The last value of i is "+i+"<br/>")
+
+
+    </script>
+</body>
+
+</html>
