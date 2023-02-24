@@ -1,0 +1,212 @@
+/* Ascendant Descendant */
+.subheader .subheaderInner {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    /*background-color: rgba(255,255,255,.8);*/
+    background-color: transparent;
+    height: 550px;
+}
+
+/* Class */
+.pageTitleArea {
+    display: none;
+}
+
+/* Universal */
+* {
+    font-family: Comic Sans MS, sans-serif, Arial;
+}
+
+/* Element Purpose */
+h1 {
+    font-size: 28px;
+}
+
+/* Id */
+#footer {
+    background-color: #d2a437;
+}
+
+/* Class */
+.header-top {
+    background-color: #d2a437;
+}
+
+/* */
+p.featured.new {
+    border: 1px solid #25f612;
+}
+
+/* Multiple Class */
+p.wow {
+    color: #ffffff;
+}
+
+/* Pseudo-Element */
+a:link {
+    color: #ff0000 !important;
+    font-weight: bold;
+}
+
+/* Pseudo-Element */
+a:visited {
+    color: #0055ff !important;
+}
+
+/* Pseudo-Element */
+a:active {
+    background-color: #000000 !important;
+    color: #ffffff !important;
+}
+
+/* Pseudo-Element */
+a:hover {
+    background-color: #48ff00 !important;
+}
+
+/* Pseudo-Class */
+p::first-line {
+    font-weight: bold;
+}
+
+/* Pseudo-Class */
+p::first-letter {
+    text-transform: uppercase;
+    font-size: 29px !important;
+    font-weight: bold;
+    font-family: blackjack;
+}
+
+/* Ascendant Descendant */
+nav ul {
+    text-decoration: underline;
+}
+
+/* Attribute */
+[class="book"] {
+    background-color: yellow;
+}
+
+/* Attribute */
+img[class="wp-image-68"] {
+    box-shadow: 5px 5px 5px #777777;
+}
+
+/* Attribute */
+img[class*="wp-image-"] {
+    box-shadow: 5px 5px 5px #777777;
+}
+
+/* Attribute */
+time[datetime] {
+    color: #008000 !important;
+}
+
+/* Pseudo-Element */
+nav:first-child {
+    background-color: #dbe8db !important;
+}
+
+/* Pseudo-Class */
+h2::before {
+    content: "|";
+    color: rgb(0, 0, 0);
+}
+
+/* Pseudo-Class */
+h2::after {
+    content: "|";
+    color: rgb(0, 0, 0);
+}
+
+/* Child of Immediate Parent */
+h1>a {
+    text-shadow: 2px 2px 3px #fac900;
+}
+
+/* Adjacent Sibling */
+h1+p {
+    text-shadow: 1px 1px 1px #fac900;
+}
+
+/* Pseudo-Element */
+:root {
+    border: 10px dotted rgb(246, 132, 2);
+}
+
+/* html is the same as :root */
+html {
+    border: 10px dotted rgb(246, 132, 2);
+}
+
+/* Pseudo-Class */
+h2::before {
+    content: "|";
+    color: rgb(0, 0, 0);
+}
+
+/* Pseudo-Class */
+h2::after {
+    content: "|";
+    color: rgb(0, 0, 0);
+}
+
+/* Pseudo-Element not() */
+body:not(header) {
+    color: purple;
+}
+
+/* Follower */
+p~header {
+    font-size: inherit;
+}
+
+/* Media Query */
+@media print {
+    p, h1, h2 {
+        font-size: 14px;
+    }
+}
+
+/* Media Query and attributes */
+@media (max-width:600px) {
+    p, h1, h2 {
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 700px) {}
+
+/* Keyframes */
+
+@keyframes txt-colors {
+    0%, 100% {
+        color: red;
+    }
+
+    70% {
+        color: blue;
+    }
+
+    30% {
+        color: rgb(0, 255, 255);
+    }
+}
+
+@keyframes txt-size {
+    0%, 100% {
+        font-size: 10px;
+    }
+
+    35% {
+        font-size: 24px;
+        font-weight: bold;
+    }
+}
+
+.blog-text>h4 {
+    animation-name: txt-colors, txt-size;
+    animation-duration: 20s, 20s;
+    animation-delay: 0s, 0s;
+    animation-iteration-count: infinite, infinite;
+}
