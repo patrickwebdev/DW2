@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS demonstration Class16</title>
+</head>
+
+<body>
+
+    <p id="firstParagraph"> </p>
+    
+
+    <script type="text/javascript">
+
+        //This object allow to create the value of a HTML element
+        //Hello World 2 is the value of the <p id="firstParagraph"> in this example
+        //The id is used to connect it to the corresponding paragraph
+        message="Hello World 2"
+        document.getElementById('firstParagraph').innerHTML = message;
+
+        //DIFFERENT TYPES OF FUNCTIONS
+
+        //1- FUNCTIONS THAT RETURNS A VALUE
+        function myProduct(a, b)
+        {
+            atimesb=a*b
+            return atimesb 
+        }
+
+       document.write(myProduct(2, 5))
+       document.write("<br/>")
+       document.write(myProduct(25, 4))
+       document.write("<br/>")
+       sum = 200 + (myProduct(25, 4)) 
+       document.write(sum)
+
+       document.write("<br/>")
+
+        //2- FUNCTIONS THAT RETURNS AN ARRAY
+        
+        function basic_arithm(a, b) {
+            add = a + b;
+            diff = a - b;
+            prod = a * b;
+            var array_results=[add, diff, prod]
+            return array_results;
+        }
+        calc=basic_arithm(6, 2)
+        document.write(calc[0]+" "+calc[1]+" "+calc[2])
+        document.write("<br/>")
+        document.write(calc)
+
+        document.write("<br/>")
+        
+        //4- FUNCTIONS THAT DO NOT RETURN A VALUE BUT DISPLAYS A TEXT
+        function getSum(a){
+            for (i=1; i<=10; i++){
+                sum=a+i
+                document.write(a+" + "+i+" = "+sum+"<br/>")
+            }
+        }
+
+        getSum(9)
+
+        
+        //5- SAME WAY TO RETURN AN ARRAY OR UNITARY VARIABLE TO A FUNCTIONS 
+        // SAME WAY TO RECEIVE AN ARRAY OR UNITARY VARIABLE AS ARGUMENTS TO A FUNCTIONS
+        
+        function product(n)
+        {
+            document.write(n[0]+" "+n[1]+" "+n[2])
+        }
+
+        abc=[1,2,3]
+        product(abc)
+
+        document.write("<br/>")
+        //5- SCOPE OF THE VARIABLES MANIPULATED BY A FUNCTION 
+
+        function theproduct(myArray)
+        {   
+            var nbr=myArray //Use var to create local variables 
+            document.write(nbr[0]+" "+nbr[1]+" "+nbr[2])
+        }
+
+        abcde=[5,4,1,2,3]
+        theproduct(abcde)
+
+        document.write("<br/>")
+
+        //document.write(nbr) Cannot execute this command because nbr is a local variable, not a global variable
+
+        document.write("<br/>")
+        //6- RECURSIVE FUNCTIONS
+
+   
+        function Myfactorial(a)
+        {
+            // single line to find factorial (? Conditional statement)
+            return (a == 1 || a == 0) ? 1 : a * factorial(a - 1);
+        }
+
+        document.write(Myfactorial(4))
+        
+        document.write("<br/>")
+
+        function factorial(a)
+        {  
+            if (a == 1 || a == 0)
+                return 1
+            else 
+                return a * factorial(a - 1)
+        }
+
+        document.write(factorial(4))
+       
+    </script>
+</body>
+
+</html>
