@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS demonstration Class16</title>
+</head>
+
+<body>
+
+
+
+
+    <script type="text/javascript">
+
+        /*2 CATEGORIES OF FUNCTIONS
+        1-ORDINARY FUNCTIONS that can be at the same time: 
+        – a real function 
+        – a method 
+        – a constructor function
+        2-SPECIALIZED FUNCTIONS that can only be one thing at the same time. There are: 
+        – A Arrow functions: can only be a real function.
+        – A Method: can only be a method.
+        – A Class: can only be a constructor function.*/
+
+        //1-ORDINARY FUNCTIONS
+
+        //Example 1-Named Function declaration (a statement)
+        function normalA(a, b, c) {
+            return a * b * c;
+        }
+
+        document.write(normalA(1, 2, 3));
+        document.write("<br/>");
+
+        //Example 2-Anonymous function expression
+        const normalB = function (a, b, c) {
+            return a * b * c;
+        };
+
+        document.write(normalB(1, 1, 30));
+        document.write("<br/>");
+
+        //Example 3-Named function expression
+        const normalC = function myName(a, b, c) {
+            return a * b * c;
+        };
+
+        document.write(normalC(10, 2, 3));
+        document.write("<br/>");
+
+        /*Ordinary functions that can be at the same time:*/
+        /*1.1– a real function: invoked via a function call.*/
+        function normalA(a, b, c) {
+            return a * b * c;
+        }
+
+        document.write(normalA(4, 5, 2));
+        document.write("<br/>");
+
+        /*1.2– a regular method: stored in property, invoked via a method call.*/
+        const object1 = { normalAAsMethod: normalA };
+        document.write(object1.normalAAsMethod(1, 4, 6));
+        document.write("<br/>");
+
+        /*1.3– a class/ an object constructor : invoked via new.*/
+        const object2 = new normalA(1, 3, 3);
+        //object2 instanceof normalAAsClass
+        document.write(object2 instanceof normalA);
+        document.write("<br/>");
+
+        object2.greeting = "Hello Quebec/Canada";
+        document.write(object2.greeting);
+        document.write("<br/>");
+
+        //2-SPECIALIZED FUNCTIONS
+        //2.1– A Arrow functions: can only be a real function            
+        const myArrow = (a, b, c) => { return a * b * c };
+        document.write(myArrow(2, 4, 6));
+        document.write("<br/>");
+
+        //2.2– A Method: can only be a method
+        const object3 = { method() { return 'tuvwzyz' } };
+        document.write(object3.method());
+        document.write("<br/>");
+
+        //2.2– A Class: can only be a constructor function.
+        function SuperBall(x) {
+            const pi = 3.14;
+            this.radius = x;
+            this.area = pi * x ** 2;
+
+            this.show = function () {
+                document.write('area = ' + this.area);
+            }
+        }
+        object4 = new SuperBall(3);
+        object4.show();
+        document.write("<br/>");
+
+        // A less awkward notation.
+        class MySuperBall {
+            constructor(x) {
+                const pi = 3.14;
+                this.radius = x;
+                this.area = pi * x ** 2;
+            }
+
+            show() {
+                document.write('area = ' + this.area);
+            }
+        }
+        object5 = new MySuperBall(3);
+        object5.show();
+        document.write("<br/>");
+
+        //Creating a child class - Use another class as a parent class
+        class whatBall extends MySuperBall {
+            showAgain() {
+                document.write('the area = ' + this.area);
+            }
+        }
+        object6 = new whatBall(3);
+        object6.showAgain();
+        document.write("<br/>");
+
+        //Source of the next 2 exercises  
+        //Nixon, Robin. Learning PHP, MySQL & JavaScript, 5th Edition. USA: O’Reilly Media, Inc, 2018.
+        //Declare a class and a method inside it 
+        function Theuser1(forename, username, password) {
+            this.forename = forename  //Properties
+            this.username = username
+            this.password = password
+            this.showUserInfo = function () {   //Method
+                document.write("Forename: " + this.forename + "<br>")
+                document.write("Username: " + this.username + "<br>")
+                document.write("Password: " + this.password + "<br>")
+            }
+        }
+
+        object7= new Theuser1('Patrick','PatPatRick','passpass');
+        object7.showUserInfo();
+        document.write("<br/>");
+   
+        //Declare a class and a method outside it 
+        //The class is used as a constructor
+        function Theuser2(forename, username, password) {
+            this.theForename = forename  //Properties
+            this.theUsername = username
+            this.thePassword = password
+            this.showTheUser = showInfo
+        }
+
+        function showInfo() {   //Method
+            document.write("Forename: " + this.theForename + "<br>")
+            document.write("Username: " + this.theUsername + "<br>")
+            document.write("Password: " + this.thePassword + "<br>")
+        }
+
+        object8= new Theuser2('Patrick2','PatPatRick2','passpass2');
+        object8.showTheUser();
+  
+       
+    </script>
+</body>
+
+</html>
