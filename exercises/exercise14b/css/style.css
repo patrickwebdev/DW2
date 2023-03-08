@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap');
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0px 0px 0px 0px;
+    font-family: Verdana, sans-serif;
+}
+
+
+label, input, span{
+    display:block; 
+    margin-top:5px
+}
+
+
+#messageNbr2, #messageNbr1{
+    color:blue
+}
+
+#messageNbr3{
+    color:red
+}
+
+.container {
+    width: 50%;
+    border-radius: 6px;
+    margin: 5px auto 5px auto;
+    border: 2px solid black;
+    padding: 2% 2% 2% 2%;
+    
+}
+
+h1, h2, h3 {
+    text-align:center !important;
+}
+
+#current-date-from-js{
+    color:rgb(150, 3, 3);
+    font-weight: bold;
+    font-size: 170%;
+}
+
+#current-time-from-js{
+    color:rgb(18, 7, 212);
+    font-weight: bold;
+    font-size: 230%;
+    font-family: 'Orbitron', sans-serif;
+}
