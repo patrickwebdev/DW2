@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS demonstration Class16</title>
+</head>
+
+<body>
+
+
+
+
+    <script type="text/javascript">
+
+        //1-Class defined using Function with the Methods inside it
+        //Declare the class
+        function Identity(fname, lname, byear, eml, phone) {
+            this.fname = fname;
+            this.lname = lname;
+            this.byear = byear;
+            this.email = eml;
+            this.phone = phone;
+            this.age = null;
+
+            this.setAge = function () {
+                var objectdate = new Date()
+                var currentYear = objectdate.getFullYear()
+                this.age = currentYear - this.byear;
+            }
+
+            this.getAge = function () {
+                this.setAge();
+                return this.age;
+            }
+
+            this.profile = function () {
+                document.write("<p>First Name: " + this.fname + "</p>");
+                document.write("<p>Last Name: " + this.lname + "</p>");
+                document.write("<p>Age: " + this.getAge() + " years old</p>");
+                document.write("<p>Email: " + this.email + "</p>");
+                document.write("<p>Phone: " + this.phone + "</p>");
+            }
+
+        }
+
+        object1 = new Identity('Pat', "Rick", 1900, 'p@r.ca', '514-000-0000')
+        object1.profile();
+
+        document.write("<br>");
+
+        //2-Class defined using Function with the Methods outside it
+        //Declare the class
+        function Identify(fname, lname, byear, eml, phone) {
+            this.fname = fname;
+            this.lname = lname;
+            this.byear = byear;
+            this.email = eml;
+            this.phone = phone;
+            this.age = null;
+            this.calculateAge = setAge;
+            this.returnAge = getAge;
+            this.showInfo = profile;
+        }
+
+        function setAge() {
+            var objectdate = new Date()
+            var currentYear = objectdate.getFullYear()
+            this.age = currentYear - this.byear;
+        }
+
+        function getAge() {
+            this.calculateAge();
+            return this.age;
+        }
+
+        function profile() {
+            document.write("<p>First Name: " + this.fname + "</p>");
+            document.write("<p>Last Name: " + this.lname + "</p>");
+            document.write("<p>Age: " + this.returnAge() + " years old</p>");
+            document.write("<p>Email: " + this.email + "</p>");
+            document.write("<p>Phone: " + this.phone + "</p>");
+        }
+
+        object2 = new Identify('Pat', "Rick", 1800, 'p@r.ca', '514-000-0000')
+        object2.showInfo();
+
+
+        document.write("<br>");
+
+        //2-Class defined using class with a Method invoked inside the Constructor
+        class Identification {
+            constructor(fname, lname, byear, eml, phone) {
+                this.fname = fname;
+                this.lname = lname;
+                this.byear = byear;
+                this.email = eml;
+                this.phone = phone;
+                this.age = null;
+                this.setAge();
+            }
+
+            setAge() {
+                var objectdate = new Date()
+                var currentYear = objectdate.getFullYear()
+                this.age = currentYear - this.byear;
+            }
+
+            getAge() {
+                return this.age;
+            }
+
+            profile() {
+                document.write("<p>First Name: " + this.fname + "</p>");
+                document.write("<p>Last Name: " + this.lname + "</p>");
+                document.write("<p>Age: " + this.getAge() + " years old</p>");
+                document.write("<p>Email: " + this.email + "</p>");
+                document.write("<p>Phone: " + this.phone + "</p>");
+            }
+        }
+
+        object3 = new Identification('Pat', "Rick", 1700, 'p@r.ca', '514-000-0000')
+        object3.profile();
+
+        document.write("<br>");
+
+
+    </script>
+</body>
+
+</html>
