@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Patrick Saint-Louis" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/icon/icon-apps-svgrepo.svg" sizes="any" type="image/svg+xml" />
+    <title>Well-Being Agency|Home|Well-Being Services for Companies and Individuals</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body>
+    <!--Question 1-->
+    <form action="" method="" onsubmit="return calculateScore()">
+        <div class="main-question-box">
+            <!-- Question 1 Title -->
+            <div class="question-title">
+                <h1>Question 1</h2>
+                    <h2>When I make decisions&#58;</h2>
+            </div>
+
+            <!-- Question 1 Answer 1 -->
+            <div class="main-answer-box row">
+                <div class="answer-title col-md-8">
+                    <h3 class="answer">A-<span id="a">I do it quickly and go with the first impressions.</span></h3>
+                </div>
+                <div class="answer-button-box col-md-4">
+                    <div class="answer-button-1 col-md-1">
+                        <input type="radio" class="form-check-input flex-shrink-0" id="aa1" name="aa" value="1"
+                            onchange="validateOrder(this)">
+                        <label for="q1a11">1</label>
+                    </div>
+                    <div class="answer-button-2 col-md-1">
+                        <input type="radio" id="aa2" name="aa" value="2" onchange="validateOrder(this)">
+                        <label for="ac2">2</label>
+                    </div>
+                    <div class="answer-button-3 col-md-1">
+                        <input type="radio" id="aa3" name="aa" value="3" onchange="validateOrder(this)">
+                        <label for="ac3">3</label>
+                    </div>
+                    <div class="answer-button-4 col-md-1">
+                        <input type="radio" id="aa4" name="aa" value="4" onchange="validateOrder(this)">
+                        <label for="ac4">4</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 1 Answer 2 -->
+            <div class="main-answer-box row">
+                <div class="answer-title col-md-8">
+                    <h3 class="answer">B-<span id="b">I think about it, consider the options and then decide.</span>
+                    </h3>
+                </div>
+                <div class="answer-button-box col-md-4">
+                    <div class="answer-button-1 col-md-1">
+                        <input type="radio" id="ab1" name="ab" value="1" onchange="validateOrder(this)">
+                        <label for="q1a21">1</label>
+                    </div>
+                    <div class="answer-button-2 col-md-1">
+                        <input type="radio" id="ab2" name="ab" value="2" onchange="validateOrder(this)">
+                        <label for="q1a22">2</label>
+                    </div>
+                    <div class="answer-button-3 col-md-1">
+                        <input type="radio" id="ab3" name="ab" value="3" onchange="validateOrder(this)">
+                        <label for="q1a23">3</label>
+                    </div>
+                    <div class="answer-button-4 col-md-1">
+                        <input type="radio" id="ab4" name="ab" value="4" onchange="validateOrder(this)">
+                        <label for="q1a24">4</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 1 Answer 3 -->
+            <div class="main-answer-box row">
+                <div class="answer-title col-md-8">
+                    <h3 class="answer">C-<span id="c">I listen to my feelings and consider how my decisions will affect
+                            others.</span></h3>
+                </div>
+                <div class="answer-button-box col-md-4">
+                    <div class="answer-button-1 col-md-1">
+                        <input type="radio" id="ac1" name="ac" value="1" onchange="validateOrder(this)">
+                        <label for="q1a31">1</label>
+                    </div>
+                    <div class="answer-button-2 col-md-1">
+                        <input type="radio" id="ac2" name="ac" value="2" onchange="validateOrder(this)">
+                        <label for="q1a32">2</label>
+                    </div>
+                    <div class="answer-button-3 col-md-1">
+                        <input type="radio" id="ac3" name="ac" value="3" onchange="validateOrder(this)">
+                        <label for="q1a33">3</label>
+                    </div>
+                    <div class="answer-button-4 col-md-1">
+                        <input type="radio" id="ac4" name="ac" value="4" onchange="validateOrder(this)">
+                        <label for="q1a34">4</label>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Question 1 Answer 4 -->
+            <div class="main-answer-box row">
+                <div class="answer-title col-md-8">
+                    <h3 class="answer">D-<span id="d">I take it seriously and always try to make the right
+                            decision.</span></h3>
+                </div>
+                <div class="answer-button-box col-md-4">
+                    <div class="answer-button-1 col-md-1">
+                        <input type="radio" id="ad1" name="ad" value="1" onchange="validateOrder(this)">
+                        <label for="q1a41">1</label>
+                    </div>
+                    <div class="answer-button-2 col-md-1">
+                        <input type="radio" id="ad2" name="ad" value="2" onchange="validateOrder(this)">
+                        <label for="q1a42">2</label>
+                    </div>
+                    <div class="answer-button-3 col-md-1">
+                        <input type="radio" id="ad3" name="ad" value="3" onchange="validateOrder(this)">
+                        <label for="q1a43">3</label>
+                    </div>
+                    <div class="answer-button-4 col-md-1">
+                        <input type="radio" id="ad4" name="ad" value="4" onchange="validateOrder(this)">
+                        <label for="q1a44">4</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-floating">
+                <button id="submit1" class="w-100 btn btn-lg btn-primary" type="submit" name="send">NEXT</button>
+            </div>
+
+    </form>
+
+    </div>
+
+    <script>
+        function validateOrder(button) {
+
+            const alpha = ["a", "b", "c", "d"];
+            var answers = document.getElementsByTagName("h3");
+            var msg1 = '';
+            for (var i = 1; i <= 4; i++) {
+                if (button.value == (i)) {
+                    for (var j = 0; j <= 3; j++) {
+                        id = alpha[0] + alpha[j] + i;
+                        if ((button.name == 'aa') && (id == 'aa1' || id == 'aa2' || id == 'aa3' || id == 'aa4'))
+                            continue;
+                        else if ((button.name == 'ab') && (id == 'ab1' || id == 'ab2' || id == 'ab3' || id == 'ab4'))
+                            continue;
+                        else if ((button.name == 'ac') && (id == 'ac1' || id == 'ac2' || id == 'ac3' || id == 'ac4'))
+                            continue;
+                        else if ((button.name == 'ad') && (id == 'ad1' || id == 'ad2' || id == 'ad3' || id == 'ad4'))
+                            continue;
+                        if (document.getElementById(id).checked == true) {
+                            document.getElementById(id).checked = false;
+                        }
+                    }
+                }
+            }
+        }
+
+        function calculateScore() {
+            var a, b, c, d;
+            //Possible 4 points
+            if (document.getElementById("aa1").checked == true)
+                a = 4;
+            if (document.getElementById("ab1").checked == true)
+                b = 4;
+            if (document.getElementById("ac1").checked == true)
+                c = 4;
+            if (document.getElementById("ad1").checked == true)
+                d = 4;
+            //Possible 3 points
+            if (document.getElementById("aa2").checked == true)
+                a = 3;
+            if (document.getElementById("ab2").checked == true)
+                b = 3;
+            if (document.getElementById("ac2").checked == true)
+                c = 3;
+            if (document.getElementById("ad2").checked == true)
+                d = 3;
+            //Possible 2 points
+            if (document.getElementById("aa3").checked == true)
+                a = 2;
+            if (document.getElementById("ab3").checked == true)
+                b = 2;
+            if (document.getElementById("ac3").checked == true)
+                c = 2;
+            if (document.getElementById("ad3").checked == true)
+                d = 2;
+            //Possible 1 points
+            if (document.getElementById("aa4").checked == true)
+                a = 1;
+            if (document.getElementById("ab4").checked == true)
+                b = 1;
+            if (document.getElementById("ac4").checked == true)
+                c = 1;
+            if (document.getElementById("ad4").checked == true)
+                d = 1;
+
+            var cache = window.sessionStorage;
+            cache.clear();
+            cache.setItem("q1a", a);
+            cache.setItem("q1b", b)
+            cache.setItem("q1c", c)
+            cache.setItem("q1d", d)
+
+            window.open("question2.html");
+
+
+        }
+
+
+    </script>
+
+</body>
+
+</html>
