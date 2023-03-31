@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="author" content="Patrick Saint-Louis" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="img/icon/icon-apps-svgrepo.svg" sizes="any" type="image/svg+xml" />
+    <title>Well-Being Agency|Home|Well-Being Services for Companies and Individuals</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/style.css" rel="stylesheet" />
+    <script type="text/javascript" src="js/main.js"></script>
+    </style>
+</head>
+
+<body>
+
+    <div class="main-question-box">
+
+        <table>
+            <tr>
+                <th rowspan="2">QUESTION</th>
+                <th colspan="4">SCORE PER ANSWER CATEGOGY</th>
+            </tr>
+            <tr>
+                <th>A</th>
+                <th>B</th>
+                <th>C</th>
+                <th>D</th>
+            </tr>
+            <tr>
+                <th>1</th>
+                <td id="q1a"></td>
+                <td id="q1b"></td>
+                <td id="q1c"></td>
+                <td id="q1d"></td>
+            </tr>
+            <tr>
+                <th>2</th>
+                <td id="q2a"></td>
+                <td id="q2b"></td>
+                <td id="q2c"></td>
+                <td id="q2d"></td>
+            </tr>
+        </table>
+
+    </div>
+
+
+    <script>
+
+        var cache = window.sessionStorage;
+        var q1a = cache.getItem("q1a");
+        var q1b = cache.getItem("q1b");
+        var q1c = cache.getItem("q1c");
+        var q1d = cache.getItem("q1d");
+
+        var q2a = cache.getItem("q2a");
+        var q2b = cache.getItem("q2b");
+        var q2c = cache.getItem("q2c");
+        var q2d = cache.getItem("q2d");
+
+        /*cache.removeItem("key1");
+        console.log("Saved data: " + cache.getItem("key1"));*/
+
+
+        var msg1 = document.getElementById("q1a");
+        msg1.innerHTML = q1a;
+
+        var msg2 = document.getElementById("q1b");
+        msg2.innerHTML = q1b;
+
+        var msg3 = document.getElementById("q1c");
+        msg3.innerHTML = q1c;
+
+        var msg4 = document.getElementById("q1d");
+        msg4.innerHTML = q1d;
+
+
+        var msg1 = document.getElementById("q2a");
+        msg1.innerHTML = q2a;
+
+        var msg2 = document.getElementById("q2b");
+        msg2.innerHTML = q2b;
+
+        var msg3 = document.getElementById("q2c");
+        msg3.innerHTML = q2c;
+
+        var msg4 = document.getElementById("q2d");
+        msg4.innerHTML = q2d;
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
